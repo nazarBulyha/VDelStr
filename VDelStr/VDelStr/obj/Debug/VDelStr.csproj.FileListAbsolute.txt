@@ -1,0 +1,12 @@
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\bin\Debug\VDelStr.exe.config
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\obj\Debug\VDelStr.csprojResolveAssemblyReference.cache
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\bin\Debug\VDelStr.exe
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\bin\Debug\VDelStr.pdb
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\obj\Debug\VDelStr.exe
+c:\users\nazar\documents\visual studio 2015\Projects\VDelStr\VDelStr\obj\Debug\VDelStr.pdb
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\bin\Debug\VDelStr.exe.config
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\obj\Debug\VDelStr.exe
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\obj\Debug\VDelStr.pdb
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\bin\Debug\VDelStr.exe
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\bin\Debug\VDelStr.pdb
+C:\Users\nazar\Documents\main\VDelStr\VDelStr\obj\Debug\VDelStr.csprojResolveAssemblyReference.cache

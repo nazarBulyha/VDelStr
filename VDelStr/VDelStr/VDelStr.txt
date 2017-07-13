@@ -1,0 +1,56 @@
+//del first string in file;
+var lines = File.ReadLines("input.txt").Skip(1);
+File.WriteAllLines("output.txt", lines);
+
+//Серіалізація, використання файлу настройок
+public class Girl
+{
+    public string Name = "Маша!";
+    public int Age = 18;
+    public string Hobby = "Программирование на C#";
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Girl girl = new Girl();
+
+        // Сериализация.
+
+        using (Stream writer = new FileStream("Girl.xml", FileMode.Create)) {
+            XmlSerializer serializer = new XmlSerializer(typeof(Girl));
+            serializer.Serialize(writer, girl);
+        }
+
+        // Результат.
+
+        /*
+            <?xml version="1.0"?>
+            <Girl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <Name>Маша!</Name>
+                <Age>18</Age>
+                <Hobby>Программирование на C#</Hobby>
+            </Girl>
+        */
+
+        // Десериализация.
+
+        using (Stream stream = new FileStream("Girl.xml", FileMode.Open)) {
+            XmlSerializer serializer = new XmlSerializer(typeof(Girl));
+            Girl girl2 = (Girl)serializer.Deserialize(stream);
+        }
+
+    }
+}
+
+//Номер 2
+//Пытаемся загрузить файл с диска и десериализовать его
+	using(FileStream fs = 
+		new FileStream(LocalUser.GetDatabasePath()
+		+ "\\config.xml",FileMode.Open))
+		{
+		  System.Xml.Serialization.XmlSerializer xs = 
+			  new System.Xml.Serialization.XmlSerializer(typeof(Config));
+              instance = (Config)xs.Deserialize(fs);
+		}
